@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Random Quote Generator, Converter, Calculator, Magic Box.">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Fatema Islam Meem">
+  <title>Webpage design using HTML, CSS and JS.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+<body>
+
+
+
+
+
+
+
+  <header>
+    <h2>The Random Quote Generator</h2>
+  </header>
+    <div class="quote_body">
+      <div class="icon_quote">
+        <span class="icon">
+          <i class="fas fa-quote-left"></i>
+        </span>
+        <span class="quoteBox" id="quote_box">I'm not a great programmer; I'm just a good programmer with great habits.  ― Kent Beck</span>
+      </div>
+      <div class = "quote_column">
+        <button type="submit" id = "color1">Go</button>
+        <button type="submit" id = "color2">Go</button><br>
+        <button type="submit" id = "color3">Go</button>
+        <button type="submit" id = "color4">Go</button>
+      </div>
+    </div>
+
+
+
+
+
+    <header>
+      <h2>Hero Converter</h2>
+    </header>
+    <div class="hero_converter">
+      <label for="tField">Convert:</label>
+      <input type="number" id="tField" name="tField">
+      <select name="choices" id="choice">
+        <option value="toKg">lb to kg</option>
+        <option value="toLb">kg to lb</option>
+      </select>
+      <button type="submit" id="cal_button">Go</button>
+      <span id = "result">0.0</span>
+    </div>
+
+
+
+
+
+    <header>
+      <h2>Calculator</h2>
+    </header>
+    <div class = "calculator">
+      <form class = "calculator_form">
+        <label for="input_number">Input Series of Number:</label>
+        <input type="text" id="input_number" name="input_number">
+        <button type="submit" id="number_submit">submit</button><br>
+        <div class = "calculation">
+          <div class = "cal_block">
+            <label>Max:</label>
+            <p id = "max">None</p>
+          </div>
+          <div class = "cal_block">
+            <label for="mib">Min:</label>
+            <p id = "min">None</p>
+          </div>
+          <div class = "cal_block">
+            <label for="sum">Sum:</label>
+            <p id = "sum">None</p>
+          </div>
+          <div class = "cal_block">
+            <label for="average">average:</label>
+            <p id = "average">None</p>
+          </div>
+          <div class = "cal_block">
+            <label for="reverseSeries">Reverse Order:</label>
+            <p id = "reverseSeries">None</p>
+          </div>
+        </div>
+      </form> 
+    </div>
+
+
+
+
+    <header>
+      <h2>Magic!</h2>
+    </header>
+    <div class="magic">
+      <div class="magic_field">
+        <label for="mField">Enter text:</label>
+        <input type="text" id="mField" name="mField">
+        <button type="submit" id="magic_submit">submit</button>
+      </div>
+      <div class="magic_box">
+        <label for="mArea">Magic !</label><br>
+        <textarea id="mArea" name="mArea" readonly></textarea> 
+      </div>
+      <div class="magic_buttons">
+        <button id = "clear">Clear It</button>
+        <button id = "capital">Capitalize</button>
+        <button id = "sort">Sort</button>
+        <button id = "reverseArea">Reverse</button>
+        <button id = "strip">Strip Blank</button>
+        <button id = "add">Add Numbers</button>
+        <button id = "shuffle">Shuffle</button>
+      </div>
+    </div>
+
+
+
+    <script src = "script.js" charset="utf-8"></script>
+  </body>
+  </html>
